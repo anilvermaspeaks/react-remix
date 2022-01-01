@@ -8,6 +8,7 @@ import {
 } from "remix";
 import type { MetaFunction } from "remix";
 import globalStyleUrl from "~/styles/global.css";
+import Layout from "./components/Layout";
 
 export const links = () => [{rel: "stylesheet", href: globalStyleUrl}];
 
@@ -33,7 +34,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Layout>
+          <Outlet />
+        </Layout>
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === "development" && <LiveReload />}

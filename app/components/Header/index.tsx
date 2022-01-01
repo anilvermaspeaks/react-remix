@@ -9,7 +9,7 @@ function Header() {
         </div>
       </a>
       <div className="headerRight">
-        <Link to="/userList">User List</Link>
+        <Link to="/users">Users</Link>
       </div>
     </header>
   );

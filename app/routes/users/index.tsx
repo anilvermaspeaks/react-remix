@@ -1,6 +1,5 @@
 import type {LinksFunction} from "remix";
 import {useLoaderData} from "remix";
-import Layout from "~/components/Layout";
 import styles from "~/styles/users.css";
 import {User} from "../../types/user.type";
 import UserItem from "../../components/User";
@@ -17,13 +16,12 @@ export async function loader() {
 const userList = () => {
   let userList = useLoaderData();
   return (
-    <Layout>
+    <>
       <h1>User List</h1>
-
       {userList.map((user: User) => (
         <UserItem key={user.id} user={user} />
       ))}
-    </Layout>
+    </>
   );
 };
 

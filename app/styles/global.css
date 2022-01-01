@@ -119,3 +119,6 @@ h1 {
 .cardContainer {
 	padding: 2px 16px;
 }
+.w100 {
+	width: 96% !important;
+}
