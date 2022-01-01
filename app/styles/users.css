@@ -1,0 +1,32 @@
+@media screen and (max-width: 1100px) {
+	.card {
+		width: 46%;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.headerRight {
+		float: none;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		width: 96%;
+	}
+
+}
+
+
+.container {
+	padding: 30px;
+}
